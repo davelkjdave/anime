@@ -1,0 +1,620 @@
+/*
+	1. background색을 원하는 색으로 넣어주세요.
+
+	2. 새의 몸통을 원하는대로 꾸며주세요.
+	- 센터정렬하면서 중앙보다 살짝 더 아래 위치하게 해주세요.
+
+*/
+body {
+	margin: 0;
+	padding: 0;
+	background: #3795bc;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.head {
+	height: 37.5%;	/* 75px */
+	/* background-color: aqua; */
+	position: relative;
+}
+.head .hat {
+	height: 33.334%;
+	/* background-color: red; */
+}
+.head .hat .hat-1 {
+	width: 73.334%;
+	height: 40%;
+	background-color: red;
+	/* border: 1px solid blue; */
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.head .hat .hat-2 {
+	width: 100%;
+	height: 60%;
+	background-color: red;
+	/* border: 1px solid blue; */
+	border-top-right-radius: 15px;
+}
+.head .face {
+	height: 33.334%;
+	background-color: rgb(235, 190, 130);
+	position: relative;
+}
+.head .face.one {
+	width: 80%;	/* 120px */
+	border-top-right-radius: 10px;
+}
+.head .face.one .eye {
+	width: 8.334%;	/* 10px */
+	height: 80%;
+	background-color: black;
+	position: absolute;
+	bottom: 10%;
+	right: 15%;
+	border-radius: 30%;
+}
+.head .face.two {
+	width: 80%;
+	position: absolute;
+	right: 0;
+	border-top-right-radius: 10px;
+}
+.head .face.two .beard {
+	width: 55%;
+	height: 60%;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: rgb(70, 30, 0);
+}
+/* .head .face.two .mouth {
+	position: absolute;
+	right: 0;
+	top: 60%;
+	width: 30%;
+	height: 5%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+	border-left: 3px solid rgba(0, 0, 0, 0.5);
+	border-bottom-left-radius: 15px;
+} */
+.head .face.one .side {
+	width: 50%;
+	height: 200%;
+	background-color: rgb(70, 30, 0);
+	position: absolute;
+	border-bottom-left-radius: 50%;
+}
+.head .face.one .side .ear {
+	position: absolute;
+	width: 20%;
+	height: 50%;
+	background-color: rgb(235, 190, 130);
+	top: 20%;
+	left: 30%;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.body {
+	height: 47.5%;
+	border-top-left-radius: 30%;
+	border-top-right-radius: 30%;
+	background-color: black;
+	position: relative;
+}
+.body .path.two {
+	position: absolute;
+	width: 60%;
+	height: 70%;
+	background-color: #0f447e;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.body .clothes .line {
+	width: 10%;
+	height: 30%;
+	background-color: #0f447e;
+	position: absolute;
+}
+.body .clothes .line.one {
+	top: 0;
+	left: 20%;
+}
+.body .clothes .line.two {
+	top: 0;
+	left: 70%;
+}
+.body .hand {
+	width: 20%;
+	height: 30%;
+	background-color: rgb(235, 190, 130);
+	position: absolute;
+	bottom: 0;
+}
+.body .hand.one {
+	left: 0;
+}
+.body .hand.two {
+	right: 0;
+}
+.body .clothes .path{
+	position: absolute;
+}
+.body .clothes .path.one{
+	width: 100%;
+	height: 70%;
+	border-top-left-radius: 30%;
+	border-top-right-radius: 30%;
+	background-color: red;
+}
+.body .clothes .path.two .dot {
+	position: absolute;
+	width: 20%;
+	height: 30%;
+	border-radius: 50%;
+	background-color: yellow;
+}
+.body .clothes .path.two .dot.one {
+	left: 10%;
+	top: 20%;
+}
+.body .clothes .path.two .dot.two {
+	left: 70%;
+	top: 20%;
+}
+.foot {
+	height: 32%;
+	/* background-color: blueviolet; */
+	position: relative;
+}
+.foot .leg {
+	position: absolute;
+	width: 25%;
+	height: 70%;
+	background-color: #0f447e;
+}
+.foot .leg.one {
+	left: 20%;
+}
+.foot .leg.two {
+	left: 55%;
+}
+.foot .shoes {
+	width: 45%;
+	height: 30%;
+	position: absolute;
+	background-color: brown;
+}
+.foot .shoes.one {
+	bottom: 0;
+	border-top-left-radius: 30%;
+}
+.foot .shoes.two {
+	border-top-right-radius: 30%;
+	bottom: 0;
+	right: 0;
+}
+.blocks {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: 40px;
+	/* background-color: #0f447e; */
+	position: absolute;
+}
+.blocks.one {
+	bottom:50px;
+	left:30%
+}
+.blocks.two {
+	bottom: 150px;
+	left: 45%;
+	width: 200px;
+	/* position: relative;
+	left: 0; */
+}
+.block {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	background-color: #c24502;
+	border: 1px solid black;
+	/* font-size: 0; */
+	box-sizing: border-box;
+}
+.dot {
+	width: 5px;
+	height: 5px;
+	background-color: #FFF;
+	border-radius: 100%;
+	box-shadow: #000 1px 1px 1px;
+	position: absolute;
+}
+.dot.one {
+	left: 2px;
+	top: 2px;
+}
+.dot.two {
+	left: 2px;
+	bottom: 2px;
+}
+.dot.three {
+	right: 2px;
+	top: 2px;
+}
+.dot.four {
+	right: 2px;
+	bottom: 2px;
+}
+.part {
+	width: 40px;
+	height: 10px;
+	box-sizing: border-box;
+	border-bottom: 2px solid black;
+}
+.mario_wrapper {
+	position: absolute;
+	bottom: 7px;
+	width: 35px;
+	height: 40px;
+	/* background-color: aliceblue; */
+	animation: mario_anime 10s linear infinite;
+}
+@keyframes mario_anime {
+	0% {
+		left: 0%;
+	}
+	27% {
+		left: 27%;
+		bottom: 7px;
+	}
+	30% {
+		left: 30%;
+		bottom: 97px;
+	}
+	47% {
+		left: 49.5%;
+		bottom: 97px;
+	}
+	50% {
+		left: 49.5%;
+		bottom: 150px;
+	}
+	53% {
+		left: 49.5%;
+		bottom: 97px;
+	}
+	63% {
+		left: 63%;
+		bottom: 97px;
+	}
+	65% {
+		left: 65%;
+		bottom: 7px;
+	}
+	70% {
+		left: 72.5%;
+		bottom: 7px;
+	}
+	72% {
+		left: 72.5%;
+		bottom: 70px;
+	}
+	74% {
+		left: 72.5%;
+		bottom: 7px;
+	}
+	76% {
+		left: 77%;
+		bottom: 7px;
+	}
+	78% {
+		left: 77%;
+		bottom: 100px;
+		scale: 1;
+	}
+	79% {
+		scale: 1.5;
+	}
+	80% {
+		scale: 1;
+	}
+	81% {
+		scale: 1.75;
+	}
+	82% {
+		scale: 1;
+	}
+	84% {
+		scale: 1.75;
+	}
+	85% {
+		left: 77%;
+		bottom: 100px;
+	}
+	90% {
+		left: 77%;
+		bottom: 30px;
+	}
+	100% {
+		left: 100%;
+		scale: 2;
+		bottom: 30px;
+	}
+}
+.question_block {
+	position: relative;
+	bottom:10px;
+	text-align: center;
+	font-size: 30px;
+	border-bottom: 2px solid black;
+	/* box-sizing: border-box; */
+	background-color: yellow;
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: #000 1px 1px 1px;
+	line-height: 30px;
+}
+.question_block.one {
+	animation: qus_anime 10s linear infinite;
+}
+.question_block.two {
+	animation: mus_block_anime 10s linear infinite;
+}
+@keyframes mus_block_anime {
+	0% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 1;
+	}
+	72% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes qus_anime {
+	0% {
+		opacity: 1;
+	}
+	45% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.blocks.three {
+	bottom: 50px;
+	left: 70%;
+}
+.mushroom {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	/* background-color: brown; */
+	left: 40%;
+	bottom: 0;
+	/* top: 5px; */
+	animation: mus_anime 10s linear infinite;
+}
+.mus_top {
+	position: absolute;
+	bottom: 20px;
+	left: -5px;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-bottom: 20px solid #ffa000;
+	border-right: 20px solid transparent;
+	border-top: 20px solid transparent;
+}
+.mushroom .bottom {
+	width: 20px;
+	height: 20px;
+	background-color: wheat;
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+/* .mus_dot {
+	width: 5px;
+	height: 5px;
+	background-color: rgb(220, 160, 50);
+	border-radius: 100%;
+	position: relative;
+}
+.mus_dot.one {
+	width: 10px;
+	height: 10px;
+	right:10px;
+	top: 10px;
+}
+.mus_dot.two {
+
+}
+.mus_dot.three {
+
+} */
+@keyframes mus_anime {
+	0% {
+		opacity: 0;
+	}
+	69% {
+		opacity: 0;
+	}
+	70% {
+		bottom :40px;
+		left: 40%;
+		opacity: 1;
+	}
+	80% {
+		left: 100%;
+		bottom: 40px;
+		opacity: 1;
+	}
+	80.5% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.coin {
+	width: 30px;
+	height: 30px;
+	background-color: yellow;
+	border-radius: 100%;
+	position: absolute;
+	border: 2px solid black;
+	left: 42%;
+	top: 5px;
+	opacity: 0;
+	animation: coin_anime 10s linear infinite;
+}
+@keyframes coin_anime {
+	0% {
+		opacity: 0;
+	}
+	49% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+		top: 5px;
+		transform: rotate(0deg);
+	}	
+	55% {
+		top: -50px;
+		transform: rotateY(720deg);
+	}
+	60% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.coin .cercle {
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	border: 1px solid gray;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.coin .line {
+	width: 3px;
+	height: 15px;
+	background-color: black;
+	opacity: 0.5;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+}
+.total_coin {
+	font-family: "Press Start 2P", system-ui;
+}
+.total_coin .coin_img {
+	border: 2px solid black;
+	width: 20px;
+	height: 20px;
+	background-color: yellow;
+	border-radius: 100%;
+	position: absolute;
+	left: 28%;
+	top: 70%;
+}
+.total_coin .coin_img .cercle {
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	border: 1px solid gray;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.total_coin .coin_img .line {
+	width: 2px;
+	height: 10px;
+	background-color: black;
+	opacity: 0.5;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.coin_text {
+	position: absolute;
+	left: 30%;
+	top: 70.3%;
+	opacity: 0;
+}
+.coin_text.one {
+	animation: coin_anime1 10s linear infinite;
+}
+.coin_text.two {
+	animation: coin_anime2 10s linear infinite;
+}
+@keyframes coin_anime1 {
+	0% {
+		opacity: 1;
+	}
+	49% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	99% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes coin_anime2 {
+	0% {
+		opacity: 0;
+	}
+	49% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	99% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
